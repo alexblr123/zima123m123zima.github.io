@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Документ без названия</title>
+</head>
+
+<body>
+<form action="formdata.php" method="POST" >
+	<fieldset>
+     <legend>
+     Введите ваши данные
+     </legend>
+      <label>
+      Введите ваше имя:(макс. 10 символов)
+      <input type="text" maxlength="10" name="name"  placeholder="Enter your name"/>
+      </label>
+       <p>
+       <label>
+       Введите ваш пароль:(макс. 10 символов)
+       <input type="password" maxlength="10 "name="pass"  placeholder="Enter your password"/>
+       </label>
+       </p>
+    </fieldset>   
+    	<fieldset>
+     	 <legend>
+     	 Анкета
+     	 </legend>
+          <p>
+          Любите ли Вы экономить время? 
+          </p>
+           <p>
+           Да
+           <input type="radio" name="rad" value="yes" /> 
+           Нет
+           <input type="radio" name="rad" value="no" />
+           </p>   
+            <p>
+            Какими инструментами для экономии времени Вы пользуетесь?
+            </p>     
+             <p>
+              <label>
+              Ежедневник 
+              <input type="checkbox" name="checkbox1" value="Ежедневник" />
+              </label>
+               <label>
+               Хронометраж
+               <input type="checkbox" name="checkbox2" value="Хронометраж" />
+               </label>
+                <label> 
+                Свои наработки
+                <input type="checkbox" name="checkbox3" value="Свои наработки" checked/>
+                </label>
+             </p>
+              <p>
+              Сколько часов в день вы спите?
+              </p>
+               <select name="select">
+               <option name="select" value="6"> 6 </option>
+               <option name="select" value="7"> 7 </option>
+               <option name="select" value="8"> 8 </option>
+               <option name="select" value="8+"> 8+ </option>
+               </select>
+               </fieldset>
+         <fieldset>
+                 <legend>
+                 Ваши наработки
+                 </legend>
+                  <p>
+                  Поделитесь своими наработками
+                  </p>
+                   <p>
+                   <textarea name="narabotki" cols="60" rows="8" placeholder="Type your texthere..."></textarea>
+                   </p>
+                   </fieldset>
+                    <div align="right">
+                     <input type="reset" value="Сброс" /> 
+                     <input type="submit" value="Отправить" />     
+</form>
+</body>
+</html>
